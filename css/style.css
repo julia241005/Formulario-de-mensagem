@@ -1,0 +1,109 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f9e6ff; /* fundo lilás claro */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.contact-section {
+  width: 100%;
+  max-width: 900px;
+}
+
+.contact-card {
+  display: flex;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+  overflow: hidden;
+}
+
+/* Ilustração */
+.illustration {
+  flex: 1;
+  background: #f2dfff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+.illustration img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Formulário */
+.contact-form {
+  flex: 1;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.contact-form h2 {
+  color: #6a0dad;
+  margin-bottom: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  outline: none;
+  font-size: 14px;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #a64afc;
+  box-shadow: 0 0 6px rgba(166,74,252,0.3);
+}
+
+.contact-form button {
+  background: #a64afc;
+  color: #fff;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.contact-form button:hover {
+  background: #8a39e1;
+}
+
+/* Feedback */
+.feedback {
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: bold;
+}
+.feedback.success {
+  color: green;
+}
+.feedback.error {
+  color: red;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .contact-card {
+    flex-direction: column;
+  }
+  .illustration {
+    padding: 40px;
+  }
+}

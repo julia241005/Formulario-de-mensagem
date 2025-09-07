@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página de Contato</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <section class="contact-section">
+    <div class="contact-card">
+      <!-- Ilustração -->
+      <div class="illustration">
+        <img src="https://cdn-icons-png.flaticon.com/512/561/561127.png" alt="Ilustração de e-mail">
+      </div>
+
+      <!-- Formulário -->
+      <form class="contact-form" id="contactForm">
+        <h2>Nos Envie Uma Menssagem</h2>
+        
+        <input type="text" id="name" placeholder="Nome" required>
+        <input type="email" id="email" placeholder="Email" required>
+        <textarea id="message" placeholder=" Menssagem" rows="4" required></textarea>
+        
+        <button type="submit">Send Message</button>
+        <p id="feedback" class="feedback"></p>
+      </form>
+    </div>
+  </section>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
